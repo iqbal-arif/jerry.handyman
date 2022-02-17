@@ -1,0 +1,350 @@
+/* Reset  */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*********************************************** Utility Components  *************************************************/
+:root {
+  /* font-size: 62.5%; */
+  font-size: 10px;
+
+  /***************** Custom Properties *****************/
+
+  /* Colors */
+  --color-primary: #730039;
+  --color-primary-m-light: hsla(330, 100%, 23%, 0.55);
+  --color-primary-m-dark: hsla(330, 100%, 23%, 0.85);
+
+  --color-secondary: #ffc513;
+  --color-secondary-m-light: hsla(45, 100%, 54%, 0.55);
+  --color-secondary-m-dark: rgba(255, 196, 19, 0.85);
+
+  --color-tertiary: #ff724c;
+  --color-tertiary-m-light: hsla(13, 100%, 65%, 0.55);
+  --color-tertiary-m-dark: rgba(255, 115, 76, 0.85);
+
+  --color-quaternary: #f6eedf;
+  --color-quaternary-m-light: hsla(39, 56%, 92%, 0.55);
+  --color-quaternary-m-dark: hsla(39, 56%, 92%, 0.85);
+
+  /* Transition Duration */
+  --transition-duration: 0.3s;
+
+  /* Section Title Font Size */
+  --font-size-title: calc(2rem + 2vw);
+
+  /* Section Padding */
+  --padding-section: 8vh 3vw;
+}
+
+body {
+  font-family: "Merienda One", cursive;
+}
+
+#container {
+  display: grid;
+  grid-template-columns:
+    [container-start] 1fr [center-start] repeat(
+      10,
+      [col-start] minmax(min-content, 11.2rem) [col-end]
+    )
+    [center-end] 1fr [container-end];
+  grid-template-rows: 65vh repeat(7, min-content);
+}
+
+#header,
+#service-title,
+#house,
+#gallery,
+#footer,
+#modal-overlay {
+  position: relative;
+}
+
+/* *-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-MAIN SECTION*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+header#header {
+  background-image: linear-gradient(
+    rgb(227, 216, 168) 1%,
+    rgb(241, 238, 226) 32%,
+    rgb(241, 238, 226) 67%,
+    rgba(227, 216, 168, 0.5) 100%
+  );
+  grid-column: container-start / container-end;
+  display: grid;
+  grid-template-columns: 0.25fr repeat(8, 0.5fr) 0.25fr;
+  grid-template-rows: 0.25fr repeat(3, 1fr) 0.5fr;
+  grid-row: 1/2;
+  z-index: -1;
+}
+
+div.logo {
+  display: grid;
+  grid-column: 2/7;
+  grid-row: 2/5;
+  display: grid;
+  place-items: center;
+}
+
+div.hero {
+  display: grid;
+  grid-column: 6/10;
+  grid-row: 2/3;
+}
+.hero #list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 5.5rem;
+  list-style: none;
+  color: cornsilk;
+}
+
+#list .level-1 {
+  color: #e10006;
+  font-size: calc(6rem + 0.5rem);
+}
+#list .level-2,
+#list .level-3 {
+  color: #535353;
+  font-size: calc(2.25rem + 0.8vw);
+}
+
+div.exp {
+  display: grid;
+  place-items: center;
+  grid-column: 7/10;
+  grid-row: 3/5;
+}
+.j-30yrs {
+  display: grid;
+  place-items: center;
+  width: calc(15vw - 1.8vw);
+}
+
+div.phone {
+  display: grid;
+  grid-column: 2/10;
+  grid-row: 5/6;
+  font-size: var(--font-size-title);
+  place-items: center;
+  padding: 0.25% 3%;
+  color: #e10006;
+}
+
+/**-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-**-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+/* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-SECTION MY SERVICE TITLE*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+#service-repair {
+  display: grid;
+  grid-column: container-start / container-end;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 0.5fr);
+  grid-row: 2/3;
+  background-color: rgb(228, 51, 51);
+  height: calc(5vh + 1.5vh);
+  padding: 1rem 0rem;
+
+  z-index: 2;
+}
+#service-repair h2 {
+  text-align: center;
+  font-size: calc(2.05rem + 1.5vw);
+  font-family: "Fira Sans", sans-serif;
+  padding: 5px 0px;
+}
+
+/**-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+
+/**-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+/* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-HOUSE SVG*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+
+section#house {
+  grid-column: container-start / container-end;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  z-index: 3;
+}
+
+#house {
+  z-index: 3;
+}
+
+#house .tower {
+  padding-left: 5rem;
+  fill: #333;
+  stroke: #f1eee2;
+  z-index: 3;
+  position: relative;
+}
+
+.tl-box,
+.tr-box,
+.bl-box,
+.br-box {
+  padding-left: 5%;
+  padding-right: 5%;
+  stroke: #f1eee2;
+  transition: 0.35s ease-in transform;
+  z-index: -3;
+  position: relative;
+}
+
+.l-floor {
+  padding-left: 5%;
+  fill: #a78104;
+  stroke: #f1eee2;
+  position: relative;
+  z-index: 3;
+}
+
+.r-floor {
+  padding-right: 5%;
+  fill: #a78104;
+  stroke: #f1eee2;
+  position: relative;
+  z-index: 3;
+}
+
+.l-roof,
+.r-roof {
+  fill: #e83a3a;
+  stroke: antiquewhite;
+  stroke-width: 1.5px;
+  position: relative;
+  z-index: 3;
+}
+
+#l-roof-svg-txt,
+#r-roof-svg-txt,
+#tl-box-svg-txt,
+#tr-box-svg-txt,
+#bl-box-svg-txt,
+#br-box-svg-txt,
+#l-floor-svg-txt,
+#r-floor-svg-txt {
+  font-family: "Fira Sans", sans-serif;
+  font-size: calc(2.75rem + 0.5vw);
+  font-weight: 900;
+  fill: #f1eee2;
+  position: relative;
+  z-index: 3;
+}
+:where(.tl-box, .tr-box, .bl-box, .br-box):hover,
+:where(.tl-box, .tr-box, .bl-box, .br-box):active {
+  fill: #4b4747;
+}
+
+:where(.l-floor, .r-floor):hover,
+:where(.l-floor, .r-floor):active {
+  fill: #ac8f32;
+}
+:where(.l-roof, .r-roof):hover,
+:where(.l-roof, .r-roof):active {
+  fill: #d42f34;
+}
+/**-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-**-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+/* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-SECTION MY SERVICE TITLE*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+#service-gallery {
+  display: grid;
+  grid-column: container-start / container-end;
+  grid-row: 5/6;
+  background-color: rgb(228, 51, 51);
+  height: calc(5vh + 1.5vh);
+  z-index: 2;
+}
+#service-gallery h2 {
+  text-align: center;
+  font-size: calc(2.05rem + 1.5vw);
+  font-family: "Fira Sans", sans-serif;
+}
+
+/**-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+/* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-IMAGE GALLERY*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+
+section#gallery {
+  background-image: linear-gradient(
+    rgb(227, 216, 168) 1%,
+    rgb(241, 238, 226) 32%,
+    rgb(241, 238, 226) 67%,
+    rgba(227, 216, 168, 0.5) 100%
+  );
+  grid-column: container-start / container-end;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-row: 6/7;
+  align-self: center;
+  z-index: 4;
+}
+
+/**-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+/* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-FOOTER*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+
+footer#footer {
+  display: grid;
+  grid-column: container-start / container-end;
+  grid-template-columns: 1fr;
+  grid-row: 7/8;
+  background-color: #e10006;
+  padding: 2vh 0;
+  place-items: center;
+  color: var(--color-quaternary);
+  font-size: calc(1rem + 0.5vw);
+  z-index: 5;
+}
+#modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 1px #000;
+  display: none;
+  width: 75vw;
+  height: 75vh;
+  border-radius: 1em;
+  background-color: rgb(240, 67, 67);
+  padding: 4% 6%;
+  color: #f1eee2;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  z-index: 100;
+}
+
+#modal h1 {
+  margin-bottom: 1em;
+  position: relative;
+}
+#cls-btn {
+  position: absolute;
+  right: 1em;
+  bottom: 0.75em;
+  padding: 0.5em;
+  border-radius: 1em;
+  background-color: rgb(211, 199, 34);
+  z-index: 1002;
+}
+
+#modal-overlay.open {
+  display: block;
+  z-index: 6000;
+}
+#modal.open {
+  display: block;
+  z-index: 6000;
+}

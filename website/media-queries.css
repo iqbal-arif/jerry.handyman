@@ -1,0 +1,256 @@
+/**-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+/* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-MEDIA QUERIES*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  div.logo {
+    display: grid;
+    grid-column: 2/10;
+    grid-row: 2/4;
+  }
+
+  div.hero {
+    display: grid;
+    grid-column: 2/7;
+    grid-row: 4/5;
+  }
+  div.exp {
+    display: grid;
+    place-items: center;
+    grid-column: 7/10;
+    grid-row: 4/5;
+  }
+
+  .hero #list {
+    line-height: 3rem;
+  }
+
+  #list .level-1 {
+    color: #e10006;
+    font-size: 2.95rem;
+  }
+  #list .level-2,
+  #list .level-3 {
+    color: #535353;
+    font-size: 1.3rem;
+  }
+
+  .j-30yrs {
+    width: 25vw;
+  }
+
+  div.phone {
+    display: grid;
+    grid-column: 2/10;
+    grid-row: 5/6;
+  }
+
+  #service-repair {
+    color: white;
+    padding-bottom: 4em;
+  }
+
+  #service-gallery {
+    color: white;
+  }
+
+  #service-repair h2 {
+    font-size: calc(1.25rem + 1.5vw);
+  }
+
+  section#house {
+    padding: 2rem 4rem;
+  }
+
+  #service-gallery h2 {
+    font-size: calc(1.5rem + 1.5vw);
+  }
+
+  footer#footer {
+    font-size: calc(0.75rem + 0.5vw);
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  div.logo {
+    display: grid;
+    grid-column: 2/7;
+    grid-row: 2/4;
+  }
+
+  div.hero {
+    display: grid;
+    grid-column: 2/10;
+    grid-row: 4/5;
+  }
+  div.exp {
+    display: grid;
+    place-items: center;
+    grid-column: 7/10;
+    grid-row: 2/4;
+  }
+
+  .hero #list {
+    line-height: 3.75rem;
+  }
+
+  #list .level-1 {
+    color: #e10006;
+    font-size: 3.25rem;
+  }
+  #list .level-2,
+  #list .level-3 {
+    color: #535353;
+    font-size: 2.25rem;
+  }
+
+  .j-30yrs {
+    width: 25vw;
+  }
+
+  div.phone {
+    display: grid;
+    grid-column: 2/10;
+    grid-row: 5/6;
+  }
+
+  #service-repair {
+    color: white;
+    padding-bottom: 5em;
+  }
+
+  #service-gallery {
+    color: white;
+    padding: 1em 0em;
+  }
+
+  section#house {
+    padding: 5rem 9rem;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  header#header {
+    grid-template-columns: 0.25fr repeat(9, 0.5fr) 0.25fr;
+    grid-template-rows: 1fr repeat(4, 1fr) 1fr;
+  }
+
+  div.logo {
+    display: grid;
+    grid-column: 2/8;
+    grid-row: 2/6;
+  }
+
+  div.hero {
+    display: grid;
+    grid-column: 8/11;
+    grid-row: 2/4;
+  }
+  div.exp {
+    display: grid;
+    place-items: center;
+    grid-column: 8/11;
+    grid-row: 4/6;
+  }
+  .hero #list {
+    line-height: 3.5rem;
+  }
+  #list .level-1 {
+    color: #e10006;
+    font-size: 3.25rem;
+  }
+  #list .level-2,
+  #list .level-3 {
+    color: #535353;
+    font-size: 1.95rem;
+  }
+  .j-30yrs {
+    width: 18vw;
+  }
+
+  div.phone {
+    display: grid;
+    grid-column: 2/11;
+    grid-row: 6/7;
+  }
+
+  #service-repair {
+    color: white;
+  }
+
+  #service-gallery {
+    color: white;
+    padding: 1.5em 0em;
+  }
+
+  section#house {
+    padding: 6rem 16rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  header#header {
+    grid-template-columns: 0.25fr repeat(9, 0.5fr) 0.25fr;
+    grid-template-rows: 1fr repeat(6, 1fr) 1fr;
+  }
+
+  div.logo {
+    display: grid;
+    grid-column: 2/8;
+    grid-row: 2/8;
+  }
+
+  div.hero {
+    display: grid;
+    grid-column: 8/11;
+    grid-row: 2/5;
+  }
+  div.exp {
+    display: grid;
+    place-items: center;
+    grid-column: 8/11;
+    grid-row: 5/8;
+  }
+
+  .hero #list {
+    line-height: 4.5rem;
+  }
+
+  #list .level-1 {
+    color: #e10006;
+    font-size: 4.5rem;
+  }
+  #list .level-2,
+  #list .level-3 {
+    color: #535353;
+    font-size: 2.6rem;
+  }
+
+  .j-30yrs {
+    width: 17vw;
+  }
+
+  div.phone {
+    display: grid;
+    grid-column: 2/11;
+    grid-row: 8/9;
+  }
+
+  #service-repair {
+    color: white;
+    padding-bottom: 7em;
+  }
+  section#house {
+    padding: 4rem 16rem;
+  }
+
+  #service-gallery {
+    color: white;
+  }
+
+  #image-slider {
+    height: 65vh;
+  }
+}
+
+#gallery.image-slider {
+  height: 100vh;
+}
