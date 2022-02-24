@@ -68,6 +68,20 @@
   footer#footer {
     font-size: calc(0.75rem + 0.5vw);
   }
+
+  #modal {
+    width: 75vw;
+    height: 65vh;
+    border-radius: 1em;
+  }
+  #modal h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  #modal #modal-list {
+    padding-left: 0.5em;
+    font-size: 1.25rem;
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -125,6 +139,20 @@
 
   section#house {
     padding: 5rem 9rem;
+  }
+
+  #modal {
+    width: 80vw;
+    height: 35vh;
+    border-radius: 1em;
+  }
+  #modal h1 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  #modal #modal-list {
+    padding-left: 0.85em;
+    font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
