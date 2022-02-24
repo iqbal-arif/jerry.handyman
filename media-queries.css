@@ -38,7 +38,7 @@
     width: 25vw;
   }
 
-  div.phone {
+  a.phone {
     display: grid;
     grid-column: 2/10;
     grid-row: 5/6;
@@ -121,7 +121,7 @@
     width: 25vw;
   }
 
-  div.phone {
+  a.phone {
     display: grid;
     grid-column: 2/10;
     grid-row: 5/6;
@@ -194,7 +194,7 @@
     width: 18vw;
   }
 
-  div.phone {
+  a.phone {
     display: grid;
     grid-column: 2/11;
     grid-row: 6/7;
@@ -256,7 +256,7 @@
     width: 17vw;
   }
 
-  div.phone {
+  a.phone {
     display: grid;
     grid-column: 2/11;
     grid-row: 8/9;

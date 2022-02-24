@@ -162,7 +162,7 @@ div.exp {
   width: calc(15vw - 1.8vw);
 }
 
-div.phone {
+a.phone {
   display: grid;
   grid-column: 2/10;
   grid-row: 5/6;
@@ -170,6 +170,7 @@ div.phone {
   place-items: center;
   padding: 0.25% 3%;
   color: #e10006;
+  text-decoration: none;
 }
 
 /**-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-**-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
