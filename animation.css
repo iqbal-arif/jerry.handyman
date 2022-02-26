@@ -1,20 +1,3 @@
-/* @keyframes svg-animate {
-  from {
-    transform: translateX(0%);
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: translateX(-50%);
-    transform: rotateY(90deg);
-  }
-}
-
-#service-title h2:hover {
-  color: brown;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  transition: all 2s ease-in-out;
-} */
-
 .logo {
   animation: 1.75s ease-in-out 0s 1 normal none running puff-in-bottom;
 }
@@ -102,7 +85,7 @@
 }
 
 .repair {
-  animation: 2.5s ease-in-out 0s 1 normal none running slide-in-right;
+  animation: 3.5s ease-in-out 0s 1 normal none running slide-in-right;
 }
 
 @keyframes slide-in-right {
@@ -116,26 +99,91 @@
     opacity: 1;
   }
 }
-/* 
-#house {
-  animation: 6.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0s 1 normal none running
-    fade-in-top;
+
+/* Contact in the Tower Animation */
+
+/* #tower-txt {
+  animation: 7.25s ease-in-out 0s infinite normal none running blink-1;
 }
 
-@keyframes fade-in-top {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-
+@keyframes blink-1 {
+  0%,
+  50%,
   to {
-    transform: translateY(0);
     opacity: 1;
+  }
+  
+  25%,
+  75% {
+    opacity: 0;
   }
 } */
 
+/* Contact in the Tower Animation */
+.l-roof-svg-txt,
+.r-roof-svg-txt,
+.tl-box-svg-txt,
+.tr-box-svg-txt,
+.bl-box-svg-txt,
+.br-box-svg-txt,
+.l-floor-svg-txt,
+.r-floor-svg-txt {
+  animation: 4.25s ease-in-out 0s infinite normal none running color-change-2x;
+}
+@keyframes color-change-2x {
+  0% {
+    fill: #f1eee2;
+    stroke: #f1eee2;
+  }
+  25% {
+    fill: #dfd8bd;
+    stroke: #dfd8bd;
+  }
+  50% {
+    fill: #c7bd96;
+    stroke: #c7bd96;
+  }
+  75% {
+    fill: #b1a470;
+    stroke: #b1a470;
+  }
+
+  to {
+    fill: #ad9a5a;
+    stroke: #ad9a5a;
+  }
+}
+
+.l-floor-svg-txt,
+.r-floor-svg-txt {
+  animation: 4.25s ease-in-out 0s infinite normal none running
+    color-change-fl-5x;
+}
+@keyframes color-change-fl-5x {
+  0% {
+    fill: #000000;
+    stroke: #000000;
+  }
+  25% {
+    fill: #272727;
+    stroke: #272727;
+  }
+  50% {
+    fill: #4e4e4e;
+    stroke: #4e4e4e;
+  }
+  75% {
+    fill: #424242;
+    stroke: #424242;
+  }
+
+  to {
+    fill: #353535;
+    stroke: #353535;
+  }
+}
+
 .gallery {
-  /* animation: 3s ease 0s 1 normal none running scale-up-center; */
   animation: 3.5s ease 0s 1 normal none running puff-in-center;
 }
 
@@ -150,65 +198,6 @@
     transform: scale(1);
     filter: blur(0);
     opacity: 1;
-  }
-}
-
-/* 
-
-@keyframes slit-in-horizontal {
-  0% {
-    transform: translateZ(-800px) rotateX(90deg);
-    opacity: 0;
-  }
-
-  54% {
-    transform: translateZ(-460px) rotateX(87deg);
-    opacity: 0.5;
-  }
-
-  to {
-    transform: translateZ(0) rotateX(0);
-    opacity: 1;
-  }
-} */
-
-/* @keyframes scale-in-hor-center {
-  0% {
-    transform: scaleX(0);
-    opacity: 1;
-  }
-
-  to {
-    transform: scaleX(1);
-    opacity: 1;
-  }
-} */
-
-/* @keyframes scale-up-center {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-} */
-
-/* .tl-box, */
-/* .tr-box { */
-/* animation: 2.25s ease-in-out 0s infinite normal none running pulsate-fwd; */
-/* } */
-
-@keyframes pulsate-fwd {
-  0%,
-  to {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
   }
 }
 

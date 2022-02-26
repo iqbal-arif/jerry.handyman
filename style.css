@@ -78,6 +78,7 @@ body {
     )
     [center-end] 1fr [container-end];
   grid-template-rows: 65vh repeat(7, min-content);
+  position: relative;
   /* z-index: -5000; */
 }
 
@@ -110,6 +111,7 @@ header#header {
   grid-template-rows: 0.25fr repeat(3, 1fr) 0.5fr;
   grid-row: 1/2;
   z-index: -1;
+  position: relative;
 }
 
 div.logo {
@@ -180,6 +182,7 @@ a.phone {
   display: grid;
   grid-column: container-start / container-end;
   grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: 1fr 0.5fr 1fr; */
   grid-template-rows: repeat(2, 0.5fr);
   grid-row: 2/3;
   background-color: #e43333;
@@ -228,6 +231,16 @@ section#house {
   position: relative;
 }
 
+#tower-shadow {
+  filter: drop-shadow(3px 5px 2px rgba(129, 124, 80, 0.4));
+}
+
+#tower-shadow #tower-txt {
+  filter: drop-shadow(3px 2px 2px rgba(243, 240, 210, 0.2));
+  font-size: calc(2.25rem + 0.5vw);
+  fill: #f1eee2;
+  stroke: #f1eee2;
+}
 .tl-box,
 .tr-box,
 .bl-box,
@@ -241,6 +254,7 @@ section#house {
 }
 
 .l-floor {
+  filter: drop-shadow(dx= "0" dy= "0" stdDeviation= "0.5" flood-color= "cyan");
   padding-left: 5%;
   fill: #a78104;
   stroke: #f1eee2;
@@ -258,8 +272,8 @@ section#house {
 
 .l-roof,
 .r-roof {
-  fill: rgba(225, 0, 6, 0.65);
-  stroke: antiquewhite;
+  fill: #e42c2c;
+  stroke: #f1eee2;
   stroke-width: 1.5px;
   position: relative;
   z-index: 3;

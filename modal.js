@@ -94,12 +94,11 @@ const modalDataList = [
 ];
 
 // console.log(modalDataList.length);
-// console.log(modalDataList[0]);
+console.log(modalDataList[0]);
 console.log(modalDataList[0].leftRoof[2]); //First line of the modalDataList Array of Objects
 
+// Modal Function
 function modalContent(eValue) {
-  console.log(eValue);
-
   let k = 0;
   while (k < modalDataList.length) {
     for (key in modalDataList[k]) {
