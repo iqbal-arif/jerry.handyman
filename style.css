@@ -256,7 +256,7 @@ section#house {
 .l-floor {
   filter: drop-shadow(dx= "0" dy= "0" stdDeviation= "0.5" flood-color= "cyan");
   padding-left: 5%;
-  fill: #a78104;
+  fill: #a88a27;
   stroke: #f1eee2;
   position: relative;
   z-index: 3;
@@ -264,7 +264,7 @@ section#house {
 
 .r-floor {
   padding-right: 5%;
-  fill: #a78104;
+  fill: #a88a27;
   stroke: #f1eee2;
   position: relative;
   z-index: 3;
@@ -293,6 +293,11 @@ section#house {
   fill: #f1eee2;
   position: relative;
   z-index: 3;
+}
+
+.l-floor-svg-txt,
+.r-floor-svg-txt {
+  letter-spacing: 1rem;
 }
 :where(.tl-box, .tr-box, .bl-box, .br-box):hover,
 :where(.tl-box, .tr-box, .bl-box, .br-box):active {

@@ -101,17 +101,19 @@ console.log(modalDataList[0].leftRoof[2]); //First line of the modalDataList Arr
 function modalContent(eValue) {
   let k = 0;
   while (k < modalDataList.length) {
+    // While loop run on the object every time when HTML element is clicked
     for (key in modalDataList[k]) {
+      // First For loop gets the key from the object and matches with target id
       if (key === eValue) {
+        // when key & eValue matches the Second For loop runs and grabs the target  array
         for (const [key, value] of Object.entries(modalDataList[k])) {
-          // console.log(key);
-          // console.log(value);
           arrayValue = value;
-          // console.log("value: ", value);
+          // The Title of the Target is hardcoded
           modalTitle.textContent = arrayValue[0];
+          // Third For Loop runs for eac element in the array and displays it in the modal
           for (a = 1; a < arrayValue.length; ++a) {
             let arrayValueList = arrayValue[a];
-
+            // Creating
             arrayValueList = document.createElement("li");
             let modalListItem = modalList.appendChild(arrayValueList);
             modalListItem.textContent = arrayValue[a];
